@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """web server distribution
+
+execute: fab -f 3-deploy_web_static.py deploy -i ~/.ssh/id_rsa -u ubuntu
 """
 from fabric.api import *
 import tarfile
@@ -8,7 +10,7 @@ import re
 from datetime import datetime
 
 env.user = 'ubuntu'
-env.hosts = ["54.173.104.114", "34.227.94.64"]
+env.hosts = ["34.224.63.71", "54.85.132.208"]
 env.key_filename = "~/id_rsa"
 
 
