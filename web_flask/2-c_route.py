@@ -6,6 +6,11 @@ from flask import Flask
 app = Flask(__name__)
 
 
+@app.route('/', strict_slashes=False)
+def hello():
+    """Prints a greeting message"""
+    return "Hello HBNB!"
+
 @app.route('/c/<text>', strict_slashes=False)
 def hbnb(text):
     """Prints display C followed by the text argumente"""
