@@ -17,7 +17,7 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def hbnb(text):
+def C_(text):
     """Prints display C followed by the text argument"""
     arg = text.replace('_', ' ')
     return f"C {arg}"
